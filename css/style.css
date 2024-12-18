@@ -13,13 +13,15 @@
   --BGCOLOR-SLATE-500: hsl(216, 15%, 48%);
   --BGCOLOR-SLATE-900: hsl(218, 44%, 22%);
 
-  --FS: 15px;
+  --FS: 1.2rem;
   --FW-400: 400;
   --FW-700: 700;
   --FF: "Outfit", sans-serif;
 }
 
 body {
+  text-align: center;
+  min-height: 100svh;
   font-size: var(--FS);
   font-family: var(--FF);
   background-color: var(--BGCOLOR-SLATE-300);
@@ -27,38 +29,40 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 16px;
+  gap: 20px;
 }
 
 main {
-  margin-top: 20vh;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px;
   align-items: center;
 }
 
 article {
-  width: 100%;
-  height: 60vh;
+  max-width: 20rem;
   display: flex;
   padding: 1.5rem;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
   background-color: var(--BGCOLOR-WHITE);
   border-radius: 30px;
   text-align: center;
 }
 
-h3 {
-  margin-bottom: 10px;
+h2 {
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  font-size: 1.4rem;
 }
 
 p {
-  color: var(--BGCOLOR-SLATE-900);
+  color: var(--BGCOLOR-SLATE-500);
+  font-size: 1.1rem;
 }
 
 img {
-  width: 300px;
+  display: block;
+  max-width: 100%;
   height: auto;
   margin-bottom: 20px;
   border-radius: 30px;
@@ -66,12 +70,7 @@ img {
 
 .attribution {
   font-size: 11px;
-  text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-
-footer {
-  margin-top: 10vh;
 }
